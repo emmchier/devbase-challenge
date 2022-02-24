@@ -13,7 +13,7 @@ Text.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
-  ]).isRequired,
+  ]),
   weight: PropTypes.string,
   cap: PropTypes.string,
 };

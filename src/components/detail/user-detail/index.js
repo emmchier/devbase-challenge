@@ -5,6 +5,7 @@ import Heading from "../../common/heading";
 import ListDivider from "../../common/list-divider";
 import Text from "../../common/text";
 import { UserContent, ImageContainer, InfoContainer } from "./styles";
+import { EmptyImg } from "../../icons";
 
 const UserDetail = ({ item }) => {
   const { avatar_url, name, location } = item;
@@ -29,9 +30,9 @@ const UserDetail = ({ item }) => {
 
 UserDetail.propTypes = {
   item: PropTypes.shape({
-    avatar_url: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
+    avatar_url: PropTypes.string,
+    name: PropTypes.string,
+    location: PropTypes.string,
   }),
 };
 

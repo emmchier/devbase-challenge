@@ -33,7 +33,7 @@ Heading.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
-  ]).isRequired,
+  ]),
   variant: PropTypes.string,
   weight: PropTypes.string,
   cap: PropTypes.string,
